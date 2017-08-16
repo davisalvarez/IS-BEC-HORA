@@ -16,6 +16,16 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from BecHoras.views import*
+
+from django.conf.urls import url
+
+from django.conf.urls import include
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^helloworld/$', hello_world),
+    url(r'^$', root_page),
+    url(r'^dato/(\d+)$', mandarDato),
+    url(r'^PaginaPrincipal$', include('PaginaPrincipal.urls')),
 ]
