@@ -1,0 +1,15 @@
+CREATE TABLE `PaginaPrincipal_actividad` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `nombre` varchar(64) NOT NULL, `descripcion` varchar(255) NOT NULL, `date` datetime(6) NOT NULL, `horas` integer NOT NULL, `carne` integer NOT NULL);
+--
+-- Create model AsigActividad
+--
+CREATE TABLE `PaginaPrincipal_asigactividad` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `idActividad_id` integer NOT NULL);
+--
+-- Create model Usuario
+--
+CREATE TABLE `PaginaPrincipal_usuario` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `carne` integer NOT NULL, `nombre` varchar(64) NOT NULL, `correo` varchar(64) NOT NULL, `contrasena` varchar(64) NOT NULL, `horasPendientes` integer NOT NULL, `horasRealizadas` integer NOT NULL, `admin` bool NOT NULL);
+--
+-- Add field idUsuario to asigactividad
+--
+ALTER TABLE `PaginaPrincipal_asigactividad` ADD COLUMN `idUsuario_id` integer NOT NULL;
+ALTER TABLE `PaginaPrincipal_asigactividad` ADD CONSTRAINT `PaginaPrincipal_asig_idActividad_id_0522d46d_fk_PaginaPri` FOREIGN KEY (`idActividad_id`) REFERENCES `PaginaPrincipal_actividad` (`id`);
+ALTER TABLE `PaginaPrincipal_asigactividad` ADD CONSTRAINT `PaginaPrincipal_asig_idUsuario_id_f553fbb1_fk_PaginaPri` FOREIGN KEY (`idUsuario_id`) REFERENCES `PaginaPrincipal_usuario` (`id`);
