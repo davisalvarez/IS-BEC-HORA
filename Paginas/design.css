@@ -1,0 +1,177 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100);
+
+body {
+  background: url(https://www.bypeople.com/wp-content/uploads/2014/05/light-live-background-css.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+h1{
+  text-align: center;
+  font-size: 50px
+}
+h2{
+  text-align: center;
+}
+h3{
+  size: 15px;
+}
+
+/*
+login
+*/
+.contenedor{
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.formulario{
+  width: 500px;
+  height: 300px;
+  padding-top: 10px;
+  background-color: whitesmoke;
+  justify-content: center;
+  align-self: center;
+  display: flex;
+  border-radius: 20px;
+}
+.btnlog{
+  background-color: royalblue;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  color:white;
+}
+.btnsign{
+  width: 100px;
+  height: 30px;
+  border-radius:5px; 
+}
+.input{
+    padding-left: 10px;
+}
+
+.btnlog:hover{
+  cursor: pointer;
+}
+.btnsign:hover{
+  cursor: pointer;
+}
+
+.soporte{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+/*
+actividades
+
+*/
+
+.actividad{
+  width: 500px;
+  height: 550px;
+  padding-top: 10px;
+  background-color: whitesmoke;
+  justify-content: center;
+  align-self: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+.btnc{
+  background-color: crimson;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  color:white;
+}
+.description{
+  width: 300px;
+  height: 150px;
+}
+.aname{
+  width: 300px;
+}
+
+#btno{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+/*
+sign in
+
+*/
+.nuevoUser{
+  width: 500px;
+  height: 350px;
+  padding-top: 10px;
+  background-color: whitesmoke;
+  justify-content: center;
+  align-self: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+/*
+  Home
+*/
+.casitodo{
+  display: flex;
+}
+.left{
+  justify-content: left;
+  padding-right: 10px;
+  display: inline;
+}
+.right{
+  padding-right: 10px;
+  display: inline;
+}
+
+.menuhead{
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.menu{
+  background-color: whitesmoke;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+}
+.contenidos{
+  display: block;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+
+}
+.submenu{
+  height: 25px;
+  color:#3399FF;
+}
+.submenu:hover{
+  cursor: pointer;
+  background-color: #3399FF;
+  color:whitesmoke;
+}
+
+/*
+anuncio
+*/
+
+.anuncio{
+  width: 500px;
+  height: 350px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: whitesmoke;
+  display: block;
+  border-radius: 20px;
+}

@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>New Activity generated page</title>
+  <title>New Activity</title>
   <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="design.css">
 </head>
 <body>
 
-<h1>Create new activity...</h1>
+<h1>Create New Activity</h1>
 
-<form action="">
-  Name: <br>
-  <input name="activityName" type="text" size="60">
-  <br>
-  <br>
-  Duration time :<br>
-  <input type="number" name="quantity" min="1" max="10">
-  <br> 
-  <br>
-  Max number of volunteers: <br>	
-  <input type="number" name="quantity" min="1" max="100">
-  <br>
-  <br>
-  Description: <br>
-  <textarea  name="activityDescription" type="text" rows="10" cols="45" style="size:80px;height:180px;resize:none""> </textarea>
-  <br>
-  <br>
-  <input value="Sign In" type="submit">
- 
-</form>
+<div class = "contenedor">
+  <div class = "actividad">
+    <form action="">
+      <h3>Name: </h3>
+      <input class = "aname" name="activityName" type="text">
+      <h3>Description: </h3>
+      <textarea  class = "description" name="activityDescription" type="text"> </textarea>
+      <h3>Duration time:</h3>
+      <input type="number" name="quantity" min="1" max="10">
+      <h3>Max number of volunteers:</h3>
+      <input type="number" name="quantity" min="1" max="100">
+      
+      <br>
+      <br>
+      <input class="btnlog" value="Submit" type="submit">
+      <button class="btnc">Cancel</button>
+     
+    </form>
 
-<a href="https://www.google.com">Support Link</a>
+  </div>
+</div>
+
+<a class = "soporte" href="https://www.google.com">Support Link</a>
 
 </body>
 </html>
