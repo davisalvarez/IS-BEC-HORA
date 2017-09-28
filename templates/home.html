@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My activities</title>
+  <meta charset="UTF-8">
+    {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'design.css' %}" />
+</head>
+<body>
+
+<h1>Bec-Horas</h1>
+<div class = "casitodo">  
+  <div class="left">
+    <div class = "menu">
+      <div class = "contenidos">
+        <div class = "menuhead">MENU</div>
+        <div class = "submenu">Home</div>
+        <div class = "submenu">Library</div>
+        <div class = "submenu">Application</div>
+        <div class = "submenu">Profile</div>
+        <div class = "submenu">Settings</div>
+        <div class = "submenu">Help</div>
+      </div>
+    </div>
+  </div>
+  <div class ="right">
+      <div class = "anuncio">
+        <h2>Titulo</h2>
+        <h3>Descripcion:</h3>
+        <h3>Fecha:</h3>
+        <h3>Lugar:</h3>
+        <br>
+          <div class="submit-row">
+            <label>&nbsp;</label><input class = "btnlog" type="button" value="Log In" onclick = "location='/admin/'" />
+        </div>
+        <button class = "btnlog" id = "SignUpActivityBtn">Sign Up</button>
+
+
+  </div>
+</div>
+<a class = "soporte" href="https://www.google.com">Support Link</a>
+
+</body>
+</html>
